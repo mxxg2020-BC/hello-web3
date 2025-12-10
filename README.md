@@ -19,3 +19,6 @@ All comments are written in English for practice.
 ## Usage
 Deploy the contract using Remix and pass an initial message to the constructor.
 Then call `setMessage("Hello Again")`
+
+### Example (Remix)
+Deploy the contract with an initial string,then call `setMessage()` and read the value via `message()`.

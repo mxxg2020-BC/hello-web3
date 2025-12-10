@@ -9,7 +9,14 @@ contract HelloWeb3 {
         message = _msg;
     }
 
-	function setMessage(string memory newMessage) public {
-		message = newMessage;
-	}
+    function setMessage(string memory newMessage) public {
+        message = newMessage;
+    }
+
+    /*
+    Usage in Remix:
+    1. Deploy contract with initial message.
+    2. Call message() to read current value.
+    3. Call setMessage("New Message") to update.
+    */
 }
