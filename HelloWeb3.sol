@@ -2,6 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract HelloWeb3 {
+    // basic state variables for demo purpose
     string public message;
     uint public couter;
     bool public isActive;
