@@ -1,6 +1,7 @@
 // SPDX-License-Indentifier: MIT
 pragma solidity ^0.8.0;
 
+// simple per-user message board based on mapping and msg.sender
 contract HelloWeb3 {
     // basic state variables for demo purpose
     string public message;
@@ -9,6 +10,7 @@ contract HelloWeb3 {
     string public ownerName;
 
     mapping(address => uint) public userCount;
+    mapping(address => string) public userMessage;
 
 	// This constructor sets the initial message when deploying the contract.
     constructor(string memory _msg) {
@@ -18,9 +20,17 @@ contract HelloWeb3 {
         ownerName = "anonymous";
     }
 
-    function setMessage(string memory newMessage) public {
-        message = newMessage;
+    //function setMessage(string memory newMessage) public {
+        //message = newMessage;
+    function setMessage(string memory _msg) public {
+        userMessage[msg.sender] = _msg;
     }
+
+    // get message for a specific user
+    function getMessage(address _user) public view returns (string memory) {
+        return userMessage[_user];
+    }
+
 
     // increase count for each caller (msg.sender)
     function increase() public {
