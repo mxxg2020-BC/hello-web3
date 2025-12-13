@@ -56,8 +56,11 @@ contract HelloWeb3 {
     }
 
     // basic on-chain user profile system
+    // validate input and prevent empty profile data
     function setProfile(string memory _name, string memory _bio) public {
         require(isActive, "Registration closed");
+        require(bytes(_name).length > 0, "Name required");
+        require(bytes(_bio).length > 0, "Bio required");
         profiles[msg.sender] = Profile(_name, _bio);
         emit ProfileUpdated(msg.sender, _name, _bio);
     }
