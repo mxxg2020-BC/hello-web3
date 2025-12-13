@@ -1,8 +1,14 @@
 // SPDX-License-Identifier: MIT
+/**
+ * @title UserProfile
+ * @dev Basic on-chain user profile system with access control and events
+ * @author <mxxg2020-BC>
+ */
+
 pragma solidity ^0.8.0;
 
 // simple per-user message board based on mapping and msg.sender
-contract HelloWeb3 {
+contract UserProfile {
     // basic state variables for demo purpose
     string public message;
     uint public counter;

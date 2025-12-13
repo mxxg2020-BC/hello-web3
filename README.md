@@ -1,24 +1,20 @@
-# HelloWeb3
+# UserProfile Smart Contract
 
-A simple Solidity contract used for learning and demo.
+A simple on-chain user profile system built with Solidity.
 
-## Contract
-- 'HelloWeb3.sol' - basic contract with constructor
+## Features
+- Per-user profile (name & bio)
+- Owner-controlled registration
+- Input validation
+- On-chain events for profile updates
 
-## Deploy
-Deployed to testnet during learning process.
-
-## Notes
-All comments are written in English for practice.
-
-## Environment
+## Tech Stack
 - Solidity ^0.8.0
 - Remix
 - Ethereum testnet (Sepolia / Goerli)
 
 ## Usage
-Deploy the contract using Remix and pass an initial message to the constructor.
-Then call `setMessage("Hello Again")`
+1. Deploy the contract using Remix and pass an initial message to the constructor.
+2. Call `setProfile(name, bio)`
+3. Read profile data via mapping or events
 
-### Example (Remix)
-Deploy the contract with an initial string,then call `setMessage()` and read the value via `message()`.
