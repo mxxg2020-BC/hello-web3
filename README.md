@@ -18,3 +18,15 @@ A simple on-chain user profile system built with Solidity.
 2. Call `setProfile(name, bio)`
 3. Read profile data via mapping or events
 
+## Freelance Ready
+
+I am available for small to mid-size Solidity smart contract tasks, including:
+- User profile / membership systems
+- Mapping-based data storage
+- Owner access control
+- Events and input validation
+
+Feel free to reach out for collaboration or freelance work.
+
+Contact:
+- Github: https://github.com/mxxg2020-BC
